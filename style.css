@@ -1,0 +1,467 @@
+@font-face {
+    font-family: domain;
+    src: url(./domain.ttf);
+}
+@font-face {
+    font-family: light;
+    src: url(./light.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #222;
+
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    background-color: #222;
+    overflow: hidden;
+}
+#page1{
+    height: 120vh;
+    width: 100vw;
+    background-color: #c5bdb3;
+    position: relative;
+    overflow: hidden;
+}
+.nav{
+    height: 100px;
+    width: 100%;
+
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #222;
+}
+.nav img{
+    height: 29px;
+    width: 30%;
+}
+.nav h5{
+    font-family: light;
+    font-size: 20px;
+    font-weight: 100;
+    width: 30%;
+    margin-left: 40px;
+}
+.nav i{
+    width: 30%;
+    text-align: right;
+    margin-right: 40px;
+}
+#elems{
+    /* background-color: red; */
+    height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+#elem1{
+    width: 30%;
+    height: 100%;
+    /* background-color: blue; */
+}
+#elem2{
+    width: 30%;
+    height: 100%;
+    /* background-color: blue; */
+    border-right: 1px solid #989898;
+    padding: 20px 30px;
+    border-left: 1px solid #888888;
+    text-align: center;
+}
+#elem3{
+    width: 30%;
+    height: 100%;
+    /* background-color: blue; */
+}
+#image-div:hover img{
+    scale: 1.1;
+
+}
+#image-div img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    transition: all ease 0.5s;
+}
+#elem1 #image-div{
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+#elem3 #image-div{
+    height: 60%;
+    width: 100%;
+    overflow: hidden;
+}
+#elem1 h4{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: canopee;
+}
+#elem1 h4 span{
+    background-color: #ba3d12;
+    color: #c5bdb3;
+    font-weight: 100;
+    font-size: 18px;
+    padding: 4px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+#elem1 p{
+    font-size: 22px;
+    font-family: domain;
+    font-weight: 100;
+    color: #565656;
+}
+#elem3 h4{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: canopee;
+}
+#elem3 h4 span{
+    background-color: #ba3d12;
+    color: #c5bdb3;
+    font-weight: 100;
+    font-size: 18px;
+    padding: 4px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+#elem3 p{
+    font-size: 22px;
+    font-family: domain;
+    font-weight: 100;
+    color: #3d3d3d;
+}
+
+#elem2 h2{
+    font-family: canopee;
+    font-size: 75px;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+#elem2 h3{
+    font-family: light;
+    font-size: 40px;
+    color: #2f2f2f;
+    font-weight: lighter;
+    margin: 20px 0;
+}
+#elem2 h6{
+    font-family: light;
+    font-size: 18px;
+    color: #2f2f2f;
+    font-weight: lighter;
+}
+#page1 h1{
+    font-family: canopee;
+    letter-spacing: -25px;
+    font-size: 700px;
+    font-weight: 100;
+    background-color: #1c1b19;
+    color: #c5bdb3;
+    line-height: 600px;
+    width: 96%;
+    margin-left: 2%;
+}
+
+#page2{
+    height: 150vh;
+    width: 100%;
+    background-color: #c5bdb3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding:  15px 40px;
+
+}
+#page2-left{
+    height: 100%;
+    padding-right: 50px;
+    width: 35%;
+
+    border-right: 1px solid #2f2f2f;
+}
+#page2-left h2{
+    font-size: 120px;
+    font-family: canopee;
+    line-height: 150px;
+    font-weight: 100;
+    color: #222;
+}
+#page2-left h2 span{
+    font-size: 210px;
+    font-weight: 900;
+}
+#page2-left img{
+    height: 50%;
+    width: 95%;
+    object-fit: cover;
+}
+#page2-left p{
+    font-size: 34px;
+    margin-top: 20px;
+    font-family: domain;
+    color: #2f2f2f;
+}
+/* #page2-left .para{
+    display: flex;
+} */
+
+/* #page2-left .para span {
+    background-color: #222;
+    color: #c5bdb3;
+    font-size: 100px;
+    height: 100px;
+} */
+#page2-right{
+    height: 100%;
+    width: 60%;
+
+}
+#page2-right img{
+    object-fit: cover;
+    padding-left: 0;
+    height: 52%;
+    width: 100%;
+}
+#page2-right h1{
+    margin-top: 50px;
+    font-size: 140px;
+    font-family: canopee;
+    line-height: 130px;
+    font-weight: 100;
+    color: #222;
+    letter-spacing: -1px ;
+}
+#page3{
+    position: relative;
+    background-color: #c5bdb3;
+    padding-bottom: 60px;
+}
+#page3 h1{
+    font-size: 550px;
+    font-weight: 100;
+    letter-spacing: -10px;
+    width: fit-content;
+    margin-left: 2%;
+    padding: 0 20px;
+    line-height: 500px;
+    font-family: canopee;
+    color: #c5bdb3;
+    background-color: #222;
+}
+#page3 img{
+    height: 480px;
+    position: absolute;
+    top: 0;
+    right: 3%;
+    text-align: center;
+}
+
+#page4{
+    
+    width: 100%;
+    background-color: #c5bdb3;
+    display: flex;
+    border-bottom: 1px solid #2f2f2f;
+}
+#page4 #page4-left{
+    height: 100%;
+    width: 65%;
+}
+.top{
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+.top1{
+    margin-left: 4%;
+    height: 100%;
+    width: 45%;
+    border-right: 1px solid #3d3d3d;
+    padding-right: 30px;
+}
+.top1 h3{
+    font-family: canopee;
+    font-size: 70px;
+    letter-spacing: -1px;
+    font-weight: 100;
+}
+.top1 h5{
+    font-family: light;
+    font-size: 50px;
+    margin-top: 30px;
+    line-height: 50px;
+    font-weight: 100;
+}
+.top1 p{
+    font-family: light;
+    font-size: 30px;
+    margin-top: 40px;
+
+}
+.top2{
+    /* background-color: red; */
+    width: 55%;
+    padding: 0 4%;
+    overflow: hidden;
+}
+.top2:hover img{
+    scale: 1.1;
+}
+.top2 img{
+    height: 200px;
+    width: 500px;
+    overflow: hidden;
+
+}
+.top2 h4{
+    font-family: canopee;
+    font-size: 40px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.top2 p{
+    font-family: light;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 100;
+    color: #222;
+}
+.bottom img{
+    padding: 4%;
+    object-fit: cover;
+    height: 52%;
+    width: 100%;
+    
+}
+#page4 #page4-right{
+    width: 35%;
+    border-left: 1px solid #2f2f2f;
+    padding: 0 35px;
+ 
+}
+#page4 #page4-right .h1{
+    font-family: canopee;
+    font-size: 135px;
+    letter-spacing: -4px;
+    font-weight: 100;
+    text-align: center;
+    line-height: 170px;
+    color: #222;
+}
+#page4 #page4-right h1 span{
+    font-size: 265px;
+    font-weight: 600;
+
+}
+#page4 #page4-right p{
+    font-family: light;
+    font-size: 40px;
+    margin-top: 30px;
+    line-height: 55px; 
+    
+}
+#page4 #page4-right #gola{
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: #c6bdb3;
+    height: 260px;
+    width: 90%;
+    border: 1px solid #2f2f2f;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+#gola h1{
+    font-size: 100px;
+    font-weight: 100;
+    font-family: canopee;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-24%);
+    transition: all ease 0.6s;
+}
+#gola img{
+    height: 60px;
+    transform: translateX(-100%);
+    transition: all ease 0.6s;
+}
+#gola:hover img{
+    transform: translateX(100%);
+}
+#gola:hover h1{
+    transform: translateX(100%);
+}
+#page5{
+    padding: 30px 0;
+    width: 100%;
+    background-color: #c6bdb3;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-top: 1px solid #2f2f2f;
+    border-bottom: 1px solid #2f2f2f;
+}
+#page5::-webkit-scrollbar{
+    display: none;
+}
+#page5 h1{
+    font-size: 100px;
+    font-family: domain;
+    font-weight: 100;
+    display: inline-block;
+    margin-right: 20px;
+    animation-timing-function: linear;
+    animation-name: scroll;
+
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+#page5 h1 span{
+    font-family: canopee;
+    background-color: #222;
+    color: #c6bdb3;
+    padding: 0 12px;
+}
+#page6{
+    height: 100px;
+    width: 100%;
+    background-color: #c6bdb3;
+
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+        
+    }
+    100%{
+        transform: translateX(calc(-100% - 24%));
+    }
+}
+
+#page5:hover h1{
+    animation-play-state: paused;
+}
